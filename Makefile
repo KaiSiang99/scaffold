@@ -2,10 +2,10 @@ install:
 	pip install -r requirements.txt
 
 format:
-  black *.py
+	black *.py
 
 lint:
-  pylint --disable=R,C hello.py
+	pylint --disable=R,C hello.py
 
 test:
-  python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv --cov=hello test_hello.py
